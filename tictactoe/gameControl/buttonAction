@@ -1,0 +1,16 @@
+ public void buttonAction() {
+ 
+   //registering action listener to buttons
+   //Adding action listener for what will happen when player clicks on buttons
+   btn1.addActionListener(this);
+   btn2.addActionListener(this);
+   btn3.addActionListener(this);
+   btn4.addActionListener(this);
+   btn5.addActionListener(this);
+   btn6.addActionListener(this);
+   btn7.addActionListener(this);
+   btn8.addActionListener(this);
+   btn9.addActionListener(this);
+   btn10.addActionListener(this);
+      
+}

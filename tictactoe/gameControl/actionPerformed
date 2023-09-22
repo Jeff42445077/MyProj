@@ -1,0 +1,76 @@
+
+@Override
+public void actionPerformed(ActionEvent a) {
+  count++;
+  if(count == 1 || count == 3 || count == 5 || count == 7 || count == 9){
+    letter = "X";
+  } else if(count == 2 || count == 4 || count == 6 || count == 8 ){
+    letter = "O";
+  }
+
+  if(a.getSource() == btn1){
+    btn1.setText(letter);
+    btn1.setEnabled(false);
+  }else if(a.getSource() == btn2){
+    btn2.setText(letter);
+    btn2.setEnabled(false);
+  } else if(a.getSource() == btn3){
+    btn3.setText(letter);
+    btn3.setEnabled(false);
+  } else if(a.getSource() == btn4){
+    btn4.setEnabled(false);
+    btn4.setText(letter);
+  } else if(a.getSource() == btn5){
+    btn5.setText(letter);
+    btn5.setEnabled(false);
+  } else if(a.getSource() == btn6){
+    btn6.setText(letter);
+    btn6.setEnabled(false);
+  } else if(a.getSource() == btn7){
+    btn7.setEnabled(false);
+    btn7.setText(letter);
+  } else if(a.getSource() == btn8){
+    btn8.setEnabled(false);
+    btn8.setText(letter);
+  } else if(a.getSource() == btn9){
+    btn9.setText(letter);
+    btn9.setEnabled(false);
+  }
+  else if(a.getSource() == btn10){
+      
+    //btn10 is for reset
+    //Re-setting whole game
+    
+    letter = "";
+    count = 0;
+     
+    btn1.setEnabled(true);
+    btn2.setEnabled(true);
+    btn3.setEnabled(true);
+    btn4.setEnabled(true); 
+    btn5.setEnabled(true);
+    btn6.setEnabled(true);
+    btn7.setEnabled(true);
+    btn8.setEnabled(true);
+    btn9.setEnabled(true);
+    
+    btn1.setText("");
+    btn2.setText("");
+    btn3.setText("");
+    btn4.setText("");
+    btn5.setText("");
+    btn6.setText("");
+    btn7.setText("");
+    btn8.setText("");
+    btn9.setText("");
+    btn9.setText("");
+
+    lbl.setText("");
+    
+    win = false;
+  
+  }
+
+  //Calling checkWinner() method for to check who is the winner
+  checkWinner();
+}

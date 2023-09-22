@@ -1,0 +1,64 @@
+ private void initUI(){
+          
+   //Setting up panels layout
+   //Creating 3*3=9 grid for game
+   board.setLayout(new GridLayout(3,3));
+   //panel layout for printing winner of game
+   panel.setLayout(new FlowLayout());
+
+   //Setting up buttons background color
+   btn1.setBackground(new Color(255,255,255));
+   btn2.setBackground(new Color(255,255,255));
+   btn3.setBackground(new Color(255,255,255));
+   btn4.setBackground(new Color(255,255,255));
+   btn5.setBackground(new Color(255,255,255));
+   btn6.setBackground(new Color(255,255,255));
+   btn7.setBackground(new Color(255,255,255));
+   btn8.setBackground(new Color(255,255,255));
+   btn9.setBackground(new Color(255,255,255));
+   btn10.setBackground(new Color(255,255,255));
+   
+    //Setting up panel background color
+   panel.setBackground(new Color(255,255,255));
+   
+   //Setting up button label text
+   btn10.setText("RESET");
+   
+   //Setting up buttons border
+   btn1.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn2.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn3.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn4.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn5.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn6.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn7.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn8.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+   btn9.setBorder(BorderFactory.createLineBorder(Color.decode("#2C6791")));
+
+   //Adding all buttons in board layout
+   board.add(btn1);
+   board.add(btn2);
+   board.add(btn3);
+   board.add(btn4);
+   board.add(btn5);
+   board.add(btn6);
+   board.add(btn7);
+   board.add(btn8);
+   board.add(btn9);
+   
+   panel.add(btn10);
+   panel.add(lbl);
+   
+   //Frame is parent of all every panel
+   //panels are added in frame
+   f.add(board,BorderLayout.CENTER);
+   f.add(panel,BorderLayout.SOUTH);
+   
+   //Setting up icon for frame
+   f.setIconImage(icon);    
+   
+   f.setVisible(true);
+   f.setSize(550,550);
+   f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+}

@@ -1,0 +1,4 @@
+Sudo:
+1. Add stock via symbol and also adding volumn & price
+2. using addTrade funciton inside LoadData
+3. Calculate max price, min price, total vol, average price
