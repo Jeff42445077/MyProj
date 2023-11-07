@@ -1,2 +1,2 @@
 # MyProj
- my project
+ my projects
